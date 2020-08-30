@@ -63,12 +63,12 @@ export const Container = () => {
             <table>
                 <tbody>
                     {reduceRows.map((row, i) => {
-                        return (<tr key={i}>
-                            <td>{row.month}</td>
-                            <td className='right'>{-row.amount}</td>
-                            <td>{row.cat1}</td>
-                            <td>{row.cat2}</td>
-                        </tr>)
+                        return (
+                            <tr key={i}>
+                                <td>{row.cat2}</td>
+                                <td className='right'>{-row.amount}</td>
+                            </tr>
+                        )
                     })}
                 </tbody>
             </table>
