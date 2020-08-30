@@ -14,3 +14,7 @@ td {
 .right {
   text-align: right;
 }
+
+tr:nth-child(odd) {
+  color: gray;
+}
